@@ -1,1 +1,1 @@
-# sql_leetcode
+# SQL Practice Questions from LeetCode
