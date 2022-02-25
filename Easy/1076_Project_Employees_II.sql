@@ -73,3 +73,13 @@ HAVING COUNT(*) = (
     GROUP BY project_id
     ORDER BY COUNT(*) DESC
     LIMIT 1)
+    
+-- Solution using ALL():
+SELECT seller_id
+FROM Sales
+GROUP BY seller_id
+HAVING SUM(price) >= ALL(
+    SELECT SUM(price) as total_sales
+    FROM Sales
+    GROUP BY seller_id
+)
