@@ -64,7 +64,10 @@ Output:
 +----+----------+
 Explanation: 
 User Winston with id = 1 logged in 2 times only in 2 different days, so, Winston is not an active user.
-User Jonathan with id = 7 logged in 7 times in 6 different days, five of them were consecutive days, so, Jonathan is an active user. */
+User Jonathan with id = 7 logged in 7 times in 6 different days, five of them were consecutive days, so, Jonathan is an active user.
+ 
+
+Follow up: Could you write a general solution if the active users are those who logged in to their accounts for n or more consecutive days? */
 
 -- match the id in Logins
 -- find the login_date that is followed by consecutive dates
